@@ -1,0 +1,55 @@
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+
+    <body>
+        
+        <div id="menu" class="menu" >
+            <h3> {{titulo}} </h3>
+        </div>
+        
+        <div class="marca-dagua">
+            <img src="logo.svg">
+        </div>
+
+        <div id="termo" class="termo">
+
+            <h2>{{titulo}}</h2>
+            <div>
+                <h3>{{introducao.titulo}}</h3>
+                <div>
+                    <span>{{introducao.texto}}</span>
+                </div>
+            </div>
+
+            <div>
+                <h3>{{privacidade.titulo}}</h3>
+                <div>
+                    <span>{{privacidade.texto}}</span>
+                </div>
+            </div>
+
+            <div>
+                <h3>{{aceitacao.titulo}}</h3>
+                <div>
+                    <span>{{aceitacao.texto}}</span>
+                </div>
+            </div>
+
+            <div>
+                <h3>{{cancelamento.titulo}}</h3>
+                <div>
+                    <span>{{cancelamento.texto}}</span>
+                </div>
+            </div>
+        </div>
+
+        <script src="index.js" ></script>
+    </body>
+
+
+</html>

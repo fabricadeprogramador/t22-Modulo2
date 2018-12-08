@@ -1,0 +1,31 @@
+body{
+    margin:0;
+    font-family: sans-serif;
+    color:white;
+    background-color: #41b883;
+}
+#app{
+    text-align: center;
+    background: #35495e;
+}
+#app h1{
+    line-height: 50px;
+    
+}
+
+#pessoa{
+    width: 70%;
+    margin: auto;
+}
+
+span{
+    font-size: 16pt;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    line-height: 22pt;
+}
+
+fieldset{
+    margin-top: 10px;
+    border-color: #35495e;
+}

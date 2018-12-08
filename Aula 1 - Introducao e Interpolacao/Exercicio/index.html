@@ -1,0 +1,117 @@
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title> Dados Pessoais </title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"> </script>
+ </head>
+
+  <body >
+    
+    <div id="app">
+        <h1>{{titulo}}</h1>
+    </div>
+    
+    <div id="pessoa">
+        <div>
+            <h1>{{nome}}</h1>
+        </div>
+        
+        <div>
+            <span> CPF: </span>
+            <span>{{cpf}}</span>
+        </div>
+        
+        <div>
+            <span> RG: </span>
+            <span>{{rg}}</span>
+        </div>
+
+
+        <div>
+            <span> Data Nascimento: </span>
+            <span>{{dataNascimento}}</span>
+            <span> Idade: </span>
+            <span> {{ new Date().getUTCFullYear()- dataNascimento.split("/")[2] }} anos</span>
+        </div>
+
+        <div>
+            <span>Telefone: </span>
+            <span>{{telefone}}</span>
+            
+        </div>
+        <div>
+            <span>Celular: </span>
+            <span>{{celular}}</span>
+        </div>
+
+        <div>
+            <span>Email: </span>
+            <span>{{email}}</span>
+        </div>
+        
+        <div>
+            <span> Mãe: </span>
+            <span>{{mae}}</span>
+        </div>
+
+        <div>
+            <span> Pai: </span>
+            <span>{{pai}}</span>
+        </div>
+        
+        <fieldset>
+            <legend>Endereço</legend>
+            <div>
+                <span> Rua: </span>
+                <span>{{endereco.rua}} </span>
+                <span> Nº: </span>
+                <span>{{endereco.numero}}</span>
+    
+            </div>
+            <div>
+                <span>CEP:</span>
+                <span>{{endereco.cep}}</span>
+            </div>
+
+            <div>
+                <span>Cidade:</span>
+                <span>{{endereco.cidade}}</span>
+            </div>
+
+            <div>
+                <span>UF:</span>
+                <span>{{endereco.uf}}</span>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Saúde</legend>
+            <div>
+                <span>Peso:</span>
+                <span>{{peso}} Kg</span>
+            </div>
+    
+            <div>
+                <span>Altura:</span>
+                <span>{{altura}} m</span>
+            </div>
+
+            <div>
+                <h3> IMC : {{ parseFloat(peso / (altura*altura)).toFixed(2) }}</h3>
+                
+
+            </div>
+        </fieldset>
+
+        
+
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
+
+
+
+
