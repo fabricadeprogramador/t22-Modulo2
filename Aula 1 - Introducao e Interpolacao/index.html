@@ -1,0 +1,58 @@
+<html>
+
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+
+    <body>
+        <div id="app">
+            <span>{{  mensagem }}</span>
+        
+        </div>
+
+        <div id="calculadora">
+            <div>
+                <span> Soma: </span>
+                <span>{{ numeroEsquerda + numeroDireita }}</span>
+            </div>
+
+            <div>
+                <span> Subtracao: </span>
+                <span>{{ numeroEsquerda - numeroDireita }}</span>
+            </div>
+
+            <div>
+                <span> Multiplicacao: </h1>
+                <span>{{ numeroEsquerda * numeroDireita }}</span>
+            </div>
+
+            <div>
+                <span> Divisao: </span>
+                <span>{{ numeroEsquerda / numeroDireita }}</span>
+            </div>
+        </div>
+
+
+        <div id="aluno">
+            <div>
+                <span> Como foi digitado: </span>
+                <span> {{ nome }} </span>
+            </div>
+
+            <div>
+                <span> Maiusculo: </span>
+                <span> {{ nome.toUpperCase() }} </span>
+            </div>
+            <div>
+                <span> Minusculos: </span>
+                <span> {{ nome.toLowerCase() }} </span>
+            </div>
+
+        </div>
+
+        
+
+        <script src="index.js"></script>
+    </body>
+
+</html>

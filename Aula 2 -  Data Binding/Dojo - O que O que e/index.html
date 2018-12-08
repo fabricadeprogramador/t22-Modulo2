@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>O que é o que é?</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        <div id="divPerguntas">
+            <div v-for="pergunta in listaPerguntas">
+                <span>{{pergunta.pergunta}}</span>
+                <input type="text" v-model="pergunta.respostaUsuario">
+    
+                <button type="button" v-on:click="naosei(pergunta)" >Não sei</button>
+                <span v-if="pergunta.resposta == pergunta.respostaUsuario">Resposta correta:{{pergunta.resposta}}</span>
+                <span v-if="pergunta.resposta != pergunta.respostaUsuario && pergunta.respostaUsuario !=''" >Resposta incorreta</span>
+            </div>
+        </div>
+    </body>
+    <script src="index.js"></script>
+</html>
