@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script  src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <img src="http://www.caixa.gov.br/PublishingImages/home/MegadaVirada-2018/homeCaixa-Logo_330x140.png">
+    <div id="app">
+            
+            <div id="sorteo">
+                    <numero v-for="sorteio in listaNumeros" :numerosorteado="sorteio" cor="#EECB5F"></numero>
+
+            </div>
+        <button v-on:click="sortear()">
+                Sortear
+        </button>
+
+    </div>
+    
+
+ <script src="index.js"></script>
+
+</body>
+    
+
+</html>

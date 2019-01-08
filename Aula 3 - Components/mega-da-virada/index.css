@@ -1,0 +1,39 @@
+body {
+    background-image: url("http://www.caixa.gov.br/PublishingImages/home/MegadaVirada-2018/homeCaixa-Fundo1920x1080.png");
+    background-size:cover;
+    text-align: center;
+}
+
+.numero{
+    padding-top: 10px;
+    color: white; 
+    height: 40px;
+    width: 50px;
+    margin-left: 30px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px #333;
+    line-height: 30px;
+    
+}
+button{
+    margin-top: 40px;
+    width: 130px;
+    height: 40px;
+    border-radius: 7px;
+    color: white;
+    background:#124458;
+    border: none;
+    
+}
+#sorteo{
+margin: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+img {
+    margin: 40px;
+}
