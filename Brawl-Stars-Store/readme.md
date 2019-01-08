@@ -39,13 +39,15 @@
 |-----------|:-----------
 |<img src="readme/pontos-poder-errado.png" width="100px">| <img src="readme/pontos-poder-correto.png" width="100px">
 
-12. Todas as imagens e artes estão disponíveis na pasta `assets`, caso não encontre você devera utilizar suas habilidades com `HTML` e `CSS` para criar os demais elementos.
+12. Quando um brawler recebe mais pontos de poder a sua barra de pontos (rosa) deve aumentar de acordo com a quantidade de pontos adquiridas.
 
-13. O layout do seu projeto deve ser igual a foto da primeira página deste arquivo.
+13. Todas as imagens e artes estão disponíveis na pasta `assets`, caso não encontre você devera utilizar suas habilidades com `HTML` e `CSS` para criar os demais elementos.
 
-14. Para facilitar o desenvolvimento, todos os arquivos necessarios para a construção do projeto ja foram criados, observe os comentarios e desenvolva cada parte do projeto nos locais indicados.
+14. O layout do seu projeto deve ser igual a foto da primeira página deste arquivo.
 
-15. Nao é necessario utilizar localStorage, ao recarregar a pagina os dados devem ser restaurados. 
+15. Para facilitar o desenvolvimento, todos os arquivos necessarios para a construção do projeto ja foram criados, observe os comentarios e desenvolva cada parte do projeto nos locais indicados.
+
+16. Nao é necessario utilizar localStorage, ao recarregar a pagina os dados devem ser restaurados. 
 
 # <b>`Dicas` </b>
 - Procure utilizar a propriedade `width` com valores percentuais, para que seu projeto possa se tornar mais responsivel.
