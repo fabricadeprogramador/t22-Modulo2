@@ -1,0 +1,6 @@
+/* Este arquivo serve para remover a margin e configurar uma fonte padrao, nao sera necessario mexer aqui */
+body{
+    margin: 0;
+    font-family: 'Lilita One', cursive;
+    text-shadow: 2px 0px 2px black;
+}

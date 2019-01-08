@@ -1,0 +1,1 @@
+// Neste arquivo voce deve criar uma instancia de Vue capaz de controlar todo o projeto ' new Vue() ' ;)
