@@ -45,6 +45,8 @@
 
 14. Para facilitar o desenvolvimento, todos os arquivos necessarios para a construção do projeto ja foram criados, observe os comentarios e desenvolva cada parte do projeto nos locais indicados.
 
+15. Nao é necessario utilizar localStorage, ao recarregar a pagina os dados devem ser restaurados. 
+
 # <b>`Dicas` </b>
 - Procure utilizar a propriedade `width` com valores percentuais, para que seu projeto possa se tornar mais responsivel.
 - Pergunte sempre que tiver dúvida.
