@@ -16,19 +16,53 @@
     <script src="data/ofertasDiarias.js"></script>
 </head>
 <body>
-    <!-- 
-        Neste arquivo voce deve construir o corpo do projeto,
-        como fizemos no exercicio Mega Sena da Virada.
+    <div id="loja">
 
-        Os elementos do projeto como div, span, img etc ... 
-        devem ser criados aqui e estes elementos combinados 
-        com o Vue devem utilizar os componentes brawler e oferta 
-        para construir o projeto como a primeira imagem do arquivo pdf.
- 
-    -->
+        <div class="capa">
+            <img class="logo" src="assets/img/brawl-stars-logo.png">
+        </div>
+
+        <div class="loja">
+            <div class="titulo">
+                <span >{{titulo}}</span>
+            </div>
+            <div class="moedas"> 
+                <div class="moeda">
+                    <img src="assets/img/moeda.png" >
+                    <span>{{moedas.moeda}}</span>
+                </div>
+                <div class="moeda">
+                    <img src="assets/img/gema.png" >
+                    <span>{{moedas.gema}}</span>
+                </div>
+            </div>
+            <div class="itens">
+                <div class="meusBrawlers">
+                    <div class="titulo"> 
+                        <span > MEUS BRAWLERS  </span>
+                    </div>
+                    <div class="brawlers">
+                        <brawler  v-for="brawler in brawlers" :key="brawler.id" :trofeus="brawler.trofeus" :progresso-trofeus="brawler.progressoTrofeus" :imagem="brawler.imagem" :poder="brawler.poder"  :pontos-poder="brawler.pontosPoder" :total-pontos-poder="brawler.totalPontosPoder"></brawler>
+                    </div>
+
+                </div>
+
+                <div class="ofertasDiarias">
+                    <div class="titulo"> 
+                        <span >  OFERTAS DIÁRIAS  </span>
+                    </div>
+                    <div class="ofertas">
+                        <oferta title="Clique para comprar" v-for="oferta in ofertasDiarias"  :key="oferta.id" @comprar='comprar(oferta)' :pontos-poder="oferta.pontosPoder" :imagem='oferta.imagem' :nome='oferta.nome' :valor='oferta.valor' :moeda="oferta.moeda"></oferta>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="components/brawler.js"></script>
     <script src="components/oferta.js"></script>
     <script src="scripts/index.js"></script>
 </body>
 </html>
+
+<!-- http://www.howtocreate.co.uk/tutorials/css/slopes -->

@@ -1,1 +1,88 @@
-/* Todo o css do componente oferta deve ficar neste arquivo */
+.oferta{
+    display: flex;
+    border: 1px solid black;
+    position: relative;
+    margin: 10px;
+    height: 220px;
+    background-color: #42A8FF;
+    border-style: solid;
+    border-width: 10px 0;
+    border-color: #42A8FF;
+}
+.oferta .nome{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+.oferta .nome .imagem{
+    display: flex;
+}
+
+.oferta .nome .imagem img{
+    position: absolute;
+    object-fit: cover;
+}
+
+.oferta .nome .imagem span{
+    width: 100%;
+    color: white;
+    align-self: end;
+    position: absolute;
+    
+}
+
+.oferta .nome .pontoPoder{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    position: absolute;
+    color: white;
+
+}
+.oferta .nome .pontoPoder span{
+    margin-left: 2px;
+    font-size: 16pt;
+}
+
+.oferta .nome .pontoPoder img{
+    width: 24px;
+    height: 24px;
+    
+}
+
+.oferta  .foto {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.oferta  .foto img {
+    width: 100%;
+    object-fit: scale-down;
+}
+.oferta .preco{
+    position: absolute;
+    align-self: flex-end;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 5px;
+}
+.oferta .preco img{
+    width: 24px;
+    height: 24x;
+    object-fit: scale-down;
+}
+
+.oferta .preco span{
+    margin-left: 2px;
+    font-size: 18pt;
+}

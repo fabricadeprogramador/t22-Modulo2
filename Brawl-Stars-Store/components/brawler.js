@@ -1,13 +1,44 @@
-/* Desenvolver o compoenent chamado brawler, que representa cada item dos Meus Brawlers
-*
-    Utilize apenas
-
-        Vue.compoenent( 'nomeDoComponente', {
-            props: {},
-            template: ``,
-            methods: {}
-        } )
-
-    Implementando seu componente dentro do Vue.component nao se faz necessario importa-lo no index.js
-    pois o mesmo eh uma instancia de Vue e tera acesso a tudo o que voce colocar em Vue.???
-*/
+Vue.component('brawler',{
+    props:[
+    'trofeus',
+    'progressoTrofeus', 
+    'imagem',
+    'poder',
+    'pontosPoder',
+    'totalPontosPoder'
+    ],
+    template:
+        `<div class="brawler"> 
+            <div class="trofeu">
+                <div class="pontos"> 
+                    <div class="progresso" :style="{ 'width': progressoTrofeus}"> </div>
+                    <div >
+                        <img src="assets/img/trofeu.png">
+                        <span> {{trofeus}} </span>
+                    </div>
+                </div> 
+            </div>
+            <div class="foto" :style="{ 'background-image': 'url(' + imagem + ')' }"> 
+                <div class="poder"> 
+                    <span> PODER {{poder}} </span>
+                </div>
+            </div>
+            
+            <div class="pontoPoder"> 
+                <img src="assets/img/pontos-poder.png">
+                
+                <div class="pontos"> 
+                    <div class="progresso" :style="{ 'width': getProgressoPontosPoder(pontosPoder, totalPontosPoder )}"> </div>
+                    <span>  {{pontosPoder}} / {{totalPontosPoder}}  </span>
+                </div>
+                
+            </div>
+            
+        </div>`,
+    methods:{
+        getProgressoPontosPoder (pontosPoder, totalPontosPoder ){
+            return (pontosPoder / totalPontosPoder) * 100 + '%';
+        }
+    }
+    
+});

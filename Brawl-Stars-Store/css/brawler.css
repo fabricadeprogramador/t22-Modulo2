@@ -1,1 +1,93 @@
-/* Todo o css do componente brawler deve ficar neste arquivo */
+.brawler{
+    padding: 10px;
+}
+.brawler .trofeu{
+    text-align: center;
+    background-image: linear-gradient(#420124, #610235);
+}
+
+.brawler .trofeu .pontos{
+    position: relative;
+}
+
+.brawler .trofeu .pontos span{
+    color: white;
+    position: absolute;
+}
+
+.brawler .trofeu .pontos  img{
+    width: 18px;
+    height: 18px;
+    object-fit: scale-down;
+    transform: rotate(10deg);
+}
+.brawler .trofeu .progresso{
+    position: absolute;
+    height: 100%;
+    background-image: linear-gradient(#EE7420, #D85C40);
+}
+
+.brawler .foto{
+    width: 220px;
+    height: 150px;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+}
+
+.brawler .poder{
+    width: 100%;
+    text-align: right;
+
+}
+
+.brawler .poder span{
+    width: 100%;
+    text-align: center;
+    color: white;
+    background: black;
+    padding: 0 5px;
+}
+.brawler .pontoPoder{
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(#3A273B, #3A273A);
+}
+.brawler .pontoPoder img{
+    width: 52px;
+    height: 52px;
+    align-self: center;
+    position: absolute;
+    z-index: 1;
+}
+
+.brawler .pontoPoder .pontos{
+    display: inline-flex;
+    width: 80%;
+    height: 40px;
+    margin: 10px auto;
+    padding: 3px;
+    position: relative;
+    background-image: linear-gradient(#370423, #5B0233);
+    border: 2px solid black;
+    
+    transform-origin: bottom left;
+    transform: skew(-15deg, 0deg);
+    color: white;
+
+}
+
+.brawler .pontoPoder .pontos .progresso{
+    position: relative;
+    background-image: linear-gradient(#FC6BFF, #FC6AFF);
+}
+
+
+.brawler .pontoPoder .pontos span{
+    display: flex;
+    width: 80%;
+    align-self: center;
+    justify-content: center;
+    position: absolute;
+}

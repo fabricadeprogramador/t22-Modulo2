@@ -5,7 +5,7 @@ var brawlers = [
         progressoTrofeus: "42%",
         imagem: "assets/img/shelly.png",
         poder: 4,
-        pontosPoder: 80,
+        pontosPoder: 40,
         totalPontosPoder: 80
     },
     {
@@ -50,7 +50,7 @@ var brawlers = [
         progressoTrofeus: "11%",
         imagem: "assets/img/el-primo.png",
         poder: 1,
-        pontosPoder: 19,
+        pontosPoder: 9,
         totalPontosPoder: 20
     }
 ]
